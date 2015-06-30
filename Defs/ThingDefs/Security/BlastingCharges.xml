@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <thingClass>Building</thingClass>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>BlastingCharge</defName>
+    <label>Blasting Charge</label>
+    <thingClass>Building_BlastingCharge</thingClass>
+    <graphicData>
+      <texPath>Things/Building/BlastingCharge</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <altitudeLayer>Waist</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <WorkToMake>200</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <Beauty>-10</Beauty>
+    </statBases>
+    <selectable>true</selectable>
+    <tickerType>Normal</tickerType>
+    <description>A simple blasting charge.</description>
+    <comps>
+      <li>
+        <compClass>CompExplosive</compClass>
+        <explosiveRadius>3.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+      </li>
+    </comps>
+    <specialDisplayRadius>3.9</specialDisplayRadius>
+    <size>(1,1)</size>
+    <costList>
+      <Steel>35</Steel>
+    </costList>
+    <researchPrerequisite>BlastingCharges</researchPrerequisite>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
+  </ThingDef>
+
+</ThingDefs>

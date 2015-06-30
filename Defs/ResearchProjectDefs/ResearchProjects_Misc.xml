@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+
+  <ResearchProjectDef>
+    <defName>BlastingCharges</defName>
+    <label>Blasting charges</label>
+    <description>We need a way to speed up mining, could also be used to set up small traps for raiders.</description>
+    <totalCost>700</totalCost>
+    <prerequisites></prerequisites>
+  </ResearchProjectDef>
+
+</ResearchProjectDefs>

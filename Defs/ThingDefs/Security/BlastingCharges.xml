@@ -34,8 +34,7 @@
     <tickerType>Normal</tickerType>
     <description>A simple blasting charge.</description>
     <comps>
-      <li>
-        <compClass>CompExplosive</compClass>
+      <li Class="CompProperties_Explosive">
         <explosiveRadius>3.9</explosiveRadius>
         <explosiveDamageType>Bomb</explosiveDamageType>
       </li>
@@ -44,8 +43,12 @@
     <size>(1,1)</size>
     <costList>
       <Steel>35</Steel>
+      <Components>1</Components>
     </costList>
-    <researchPrerequisite>BlastingCharges</researchPrerequisite>
+    <researchPrerequisites>
+      <li>BlastingCharges</li>
+    </researchPrerequisites>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
     <constructEffect>ConstructMetal</constructEffect>
